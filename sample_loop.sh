@@ -1,4 +1,21 @@
-for i in {1..3};
+#create one file
+
+for i in {1..100000};
 do
-    touch files$i.txt
+    if [ $i == 5 ] then
+      touch files$i.txt
+    fi
 done
+
+echo $i
+
+#put some contents into file
+
+for j in {1..10};
+do
+    if [ $j == 5 ] then
+       touch files$j.txt
+    fi
+done
+
+echo $j
